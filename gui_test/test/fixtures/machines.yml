@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  instance: 1
+  hostname: 1
+  ipaddr: MyString
+  cpus: 1
+  memory: 1
+  disk: 1
+  status: 1
+  machineid: 1
+
+two:
+  instance: 1
+  hostname: 1
+  ipaddr: MyString
+  cpus: 1
+  memory: 1
+  disk: 1
+  status: 1
+  machineid: 1

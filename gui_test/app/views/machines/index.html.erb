@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Machines</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Instance</th>
+      <th>Hostname</th>
+      <th>Ipaddr</th>
+      <th>Cpus</th>
+      <th>Memory</th>
+      <th>Disk</th>
+      <th>Status</th>
+      <th>Machineid</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @machines.each do |machine| %>
+      <tr>
+        <td><%= machine.instance %></td>
+        <td><%= machine.hostname %></td>
+        <td><%= machine.ipaddr %></td>
+        <td><%= machine.cpus %></td>
+        <td><%= machine.memory %></td>
+        <td><%= machine.disk %></td>
+        <td><%= machine.status %></td>
+        <td><%= machine.machineid %></td>
+        <td><%= link_to 'Show', machine %></td>
+        <td><%= link_to 'Edit', edit_machine_path(machine) %></td>
+        <td><%= link_to 'Destroy', machine, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Machine', new_machine_path %>

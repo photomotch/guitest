@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Instance:</strong>
+  <%= @machine.instance %>
+</p>
+
+<p>
+  <strong>Hostname:</strong>
+  <%= @machine.hostname %>
+</p>
+
+<p>
+  <strong>Ipaddr:</strong>
+  <%= @machine.ipaddr %>
+</p>
+
+<p>
+  <strong>Cpus:</strong>
+  <%= @machine.cpus %>
+</p>
+
+<p>
+  <strong>Memory:</strong>
+  <%= @machine.memory %>
+</p>
+
+<p>
+  <strong>Disk:</strong>
+  <%= @machine.disk %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @machine.status %>
+</p>
+
+<p>
+  <strong>Machineid:</strong>
+  <%= @machine.machineid %>
+</p>
+
+<%= link_to 'Edit', edit_machine_path(@machine) %> |
+<%= link_to 'Back', machines_path %>
